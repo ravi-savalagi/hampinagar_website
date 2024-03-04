@@ -1,0 +1,2015 @@
+<html>
+
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid page-title" style="margin-top: 10px;">
+    <span class="title"><i class="fa fa-building"></i>&nbsp;<b>Branches</b></span>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-6 pull-right">
+            <!--<span class="download pull-right" style="margin-left: 10px;"><a href="/pdf/branch-list-english.pdf" target="_blank" class="btn btn-danger">View/Download PDF&nbsp;<img src="/images/icons/pdf.png" /></a></span>-->
+            <!--<span class="download pull-right"><a id="btnView" href="javascript:void()" class="btn btn-warning"><b>Map View</b></a></span>-->
+            <!--<button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#graphModal">Map View</button>-->
+        </div>
+    </div>
+</div>
+
+<section id="page-content">
+    <div class="container-fluid" style="margin-left: 5px;">
+        <!-- table view -->
+        <div class="row" id="tableView">
+            <div class="col-md-12">
+                <div class="clearfix"><i class="fa fa-plus-circle"></i>&nbsp;<i style="color: red"><b>Click on the branch name to view individual branch details.</b></i></div>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Start typing Branch names...">
+                <div class="clearfix"></div>
+                <div style='overflow-x: auto'>
+                    <table class="table table-responsive table-hover text-center table-bordered table-condensed  header-fixed" id="myTable">
+                        <thead class="bg-primary">
+                            <tr class="header bg-primary">
+                                <th style="width: 5%!important">
+                                    <b>BRANCH NAME</b>
+                                </th>
+                                <th style="width: 10%!important">
+                                    <b>BRANCH ADDRESS &amp; CONTACT NUMBER</b>
+                                </th>
+                                <th style="width: 15%!important">
+                                    <b>BRANCH INCHARGE NAME AND DESIGNATION</b>
+                                </th>
+                                <th style="width: 3%!important">
+                                    <b>LOCATION</b>
+                                </th>
+                                <th>
+                                    <b>LOK SABHA CONSTITUENCY NAMES AND MEMBERS NAME</b>
+                                </th>
+                                <th style="width: 10%!important">
+                                    <b>VIDHANASABHA</b>
+                                    <b>CONSTITUENCY NAMES &amp; MEMBERS</b>
+                                </th>
+                                <th>
+                                    <b>WARD NUMBERS</b>
+                                </th>
+                                <th style="width: 12%!important">
+                                    <b>TIMINGS</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=malleshwaram" target="_blank" title="Click to view full branch details">Malleshwaram Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    8<sup>th</sup> cross, Sampige road, Malleshwaram ward No- 45, Bangalore – 03
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>SUNITHA J
+                                    <br />
+                                    ASSISTANT LIBRARIAN
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.557992029655!2d77.56909911435396!3d13.000098517770828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162f86588d67%3A0x1630a7c96d578a6d!2sCity%20Central%20Library%20West%20Zone%20Bangalore!5e0!3m2!1sen!2sin!4v1571040897005!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" id="mm" data-target="#mapView" onclick="OpenMap('mm')">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+                    <br />
+
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+                    <br />
+                                    Dr C N Ashwathnarayan
+                                </td>
+                                <td>Kadumalleshwar
+                    <br />
+                                    65
+                                </td>
+                                <td>8.00 am to 8.00 pm
+                    <p>
+                        Every Monday:
+
+                        10.30 am to 5.30pm
+
+                    (Only Paper section)
+                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=prakashnagar" target="_blank" title="Click to view full branch details">Prakashnagar Branch Library</a>
+
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, 1<sup>st</sup> Floor, Prakashnagar ward No- 98, Near Gayathridevi park , Prakashnagar, Bangalore – 21
+
+                    <p><b>080 23130002</b></p>
+
+                                </td>
+                                <td>KSHAMA R
+                                    <br />
+                                    LIBRARIAN
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6257737927003!2d77.5542566643539!3d12.995770767864762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d8cde28825f%3A0x471514ced2dc2654!2sCentral%20Library%20Prakash%20Nagar!5e0!3m2!1sen!2sin!4v1571041634713!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('pn');" id="pn">Open Location</a>
+                                </td>
+                                <td>Bangalore Central 
+                    <br />
+                                    Sri P C Mohan
+                                </td>
+                                <td>Rajajinagar
+
+                    <br />
+                                    Sri S Suresh Kumar
+                                </td>
+                                <td>Prakashanagar<br />
+                                    98
+                                </td>
+                                <td>8.00 am to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=nandinilayout" target="_blank" title="Click to view full branch details">Nandhini Layout  Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    C.A. site No. 8, Near Nandhini Layout Bus stop. Nandhini Layout Ward No. 43,
+
+                    Bangalore – 10
+
+                    <p><b>080 23196457</b></p>
+
+                                </td>
+                                <td>CHANDRAMMA C R 
+
+                    <br />
+                                    ASSISTANT LIBRARIAN
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.6942123093784!2d77.53438400794955!3d13.010918911058527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d0aea20cfbd%3A0x95a44f0c05d19575!2sNandini%20Layout%20Central%20Library!5e0!3m2!1sen!2sin!4v1571042202487!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('nl');" id="nl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Nandinibadavane<br />
+                                    43
+                                </td>
+                                <td>8.00 am to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=sriram" target="_blank" title="Click to view full branch details">Sriram Mandir Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building, Beside
+                    <br />
+                                    Sri rammandir Temple
+
+                    Rajajinagar, Bangalore – 10
+
+                    <p><b>080 23408860</b></p>
+
+                                </td>
+                                <td>SAVITA HOKRANI 
+
+                    <br />
+                                    LIBRARY ASSISTANT 
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7768044846666!2d77.55391851435384!3d12.986122618074242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3df3623c5103%3A0x30437d5ca67fd777!2sPublic%20Library%20Ram%20Mandir%20Grounds!5e0!3m2!1sen!2sin!4v1571042340144!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('sm');" id="sm">Open Location</a></td>
+                                <td>Bangalore Central 
+
+                    <br />
+                                    Sri P C Mohan
+                                </td>
+                                <td>Rajajinagar
+
+                    <br />
+                                    Sri S Suresh Kumar
+
+                                </td>
+                                <td>Shrirammandira<br />
+
+                                    108
+                                </td>
+                                <td>8.00 am to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=kaigarikanagar" target="_blank" title="Click to view full branch details">Kaigarikanagar Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building,
+                    Near Ganesh Temple, 6<sup>th</sup> Block, Rajajinagar, Dr. Rajkumar Ward- 106, Bangalore – 10
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>PARVATHI C 
+
+                    <br />
+                                    LIBRARY ASSISTANT 
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8653852526263!2d77.55113291435379!3d12.980460618196982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3df1a0a44fcd%3A0xc5faef28a8fd105f!2sPublic%20Central%20Library%2C%2010%2C%2072nd%20Cross%20Rd%2C%20Rajaji%20Nagar%20Industrial%20Town%2C%20Rajajinagar%2C%20Bangalore%2C%20Karnataka%20560023!5e0!3m2!1sen!2sin!4v1574344116040!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('kn');" id="kn">Open Location</a></td>
+                                <td>Bangalore South 
+
+                    Tejaswi Surya
+                                </td>
+                                <td>Govindaraj Nagar
+
+                    <br />
+                                    Sri V Somanna
+
+                                </td>
+                                <td>Dr Rajkumar<br />
+
+                                    106
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=yeshwanthpur" target="_blank" title="Click to view full branch details">Yeshwanthpur Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    1<sup>st</sup> Main road, Govt. Primary School Building, Subedar palya, Christ Saviour Church Opp. Yeshwanthpur Ward No. 37, Bangalore – 22
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>SYED KHAJA 
+
+                   <br />
+                                    <br />
+                                    <br />
+                                    LIBRARY ASSISTANT 
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.336128760657!2d77.54578971435409!3d13.014254217463272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d7718d2fd33%3A0x43f7b81df8834692!2sAshokapuram%20Libraries!5e0!3m2!1sen!2sin!4v1571042670151!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('yp');" id="yp">Open Location</a></td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Malleshwaram<br />
+
+                                    45
+
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=vaiyalikaval" target="_blank" title="Click to view full branch details">Vyalikaval
+                    Branch Library </a>
+                                </td>
+                                <td>City Central Library,<br />
+                                    11<sup>th</sup> Cross, Vyalikaval, Malleshwaram,
+                                    <br />
+                                    Rajmahal Nagar Ward No. 64<br />
+                                    Bangalore – 03,<br />
+                                    <b>080 23567065</b>
+                                </td>
+                                <td>RAMEGOWDA H N
+                                    <br />
+                                    LIBRARY ATTENDER
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Rajamahal<br />
+
+                                    64
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=rajmahal" target="_blank" title="Click to view full branch details">Rajmahal Nagar Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    4<sup>th</sup> Main road, 
+
+                    Rajmahal Nagar Ward No. 64
+
+                    Bangalore – 03
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>RAMASWAMY H 
+
+                    <br />
+                                    LIBRARY ATTENDER
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Rajamahal<br />
+
+                                    64
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=subramanya" target="_blank" title="Click to view full branch details">Subramanya Nagar Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, 2<sup>nd</sup> Floor, Near Balaji Samudaya Bhavana, Subramanyanagar Ward No. 66, Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>V.C. VENKATESH 
+                    <br />
+                                    <br />
+                                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Subramanyanagar<br />
+
+                                    66
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=mahalakshmi" target="_blank" title="Click to view full branch details">Mahalakshmipuram Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, Bhovipalya, Nagpura Ward No. No. 67
+
+                    Bangalore – 86
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>LAKSHMIKANTH L 
+
+                     <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Nagapura<br />
+
+                                    67
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=rammohanapura" target="_blank" title="Click to view full branch details">Rammohanpura Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Beside BBMP Shishu Vihara, 3<sup>rd</sup> Cross, Rammohanpura, Kadumalleshwara Ward No. 65, Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>SUNITHA J
+
+                    <br />
+                                    ASSISTANT LIBRARIAN
+                    (Additional Charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Kadumalleshwar<br />
+
+                                    65
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=dayananda" target="_blank" title="Click to view full branch details">Dayanandanagar Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, Dayanandanagar Ward No. 97, Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>PRADEEP B M 
+
+                    <br />
+                                    LIBRARY ATTENDER
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore Central 
+
+                    <br />
+                                    Sri P C Mohan
+                                </td>
+                                <td>Rajajinagar
+
+                    <br />
+                                    Sri S Suresh Kumar
+
+                                </td>
+                                <td>Dayanandnagar<br />
+
+                                    97
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=geleyarabalaga" target="_blank" title="Click to view full branch details">Geleyarabalaga Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, 1<sup>st</sup> Floor, Bayalurangamandir, J.C. Nagar, Mahalakshmipuram Ward No. 68, Bangalore – 86
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>RAJESH K.V. 
+
+                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Mahalakshmipuram<br />
+
+                                    68
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=bayaluranga" target="_blank" title="Click to view full branch details">Bayalurangamandira Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Udayakumara Park, 
+
+                    1<sup>st</sup> Block, Rajajinagar, 
+
+                    Nagpura Ward No. 67
+
+                    Bangalore – 10
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>MALA. V
+
+                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West 
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Nagapura<br />
+
+                                    67
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=swathantrapalya" target="_blank" title="Click to view full branch details">Swathantrapalya Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Anganawadi Building 5<sup>th</sup> Cross, Srirampura, Near Hanuman Temple, Subashnagar Ward No. 96
+
+                    Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>NAGARAJAPPA C S 
+
+                    <br />
+                                    PEON
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore Central 
+
+                    <br />
+                                    Sri P C Mohan
+                                </td>
+                                <td>Gandhinagar
+
+                    <br />
+                                    Sri Dinesh Gundurao
+                                </td>
+                                <td>Subashnagar<br />
+
+                                    95
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=vidyaranyapura" target="_blank" title="Click to view full branch details">Vidyaranyapura Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, 2<sup>nd</sup> Cross, HMT Layout, 2<sup>nd</sup> Stage, Beside Ward Office, Near
+                    <br />
+                                    Sri Veeranjaneya Swamy Temple, Vidyaranyapura, Bangalore – 97
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>T JAGADEESHA
+
+                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Byatarayanpura
+
+                    <br />
+                                    Sri Krishnabairegowda
+                                </td>
+                                <td>Vidyaranyapur<br />
+
+                                    09
+
+                                </td>
+                                <td colspan="6">8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=kempegowda" target="_blank" title="Click to view full branch details">Kempegowda Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near BBMP Office, Yelahanka Old town,
+
+                    Chowdeshwari Ward No. -2
+
+                    Bangalore- 64
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>MANJUNATHA K N
+
+                    <br />
+                                    LIBRARY ATTENDER
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Kempegowda<br />
+                                    01
+                                </td>
+                                <td colspan="4">8.00 am to 11.30am and 4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=mkk" target="_blank" title="Click to view full branch details">M.K.K. Branch Library
+                                </a>
+                                </td>
+                                <td>City Central Library,
+
+                    1<sup>st</sup> Floor, BBMP Building, Mahakavi Kuvempu Road, Malleshwaram, Kadu malleshwara Ward No. 65 Bangalore – 03
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>CHANDRAKALA N M
+
+                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Kadumalleshwar<br />
+
+                                    65
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=yelahankant" target="_blank" title="Click to view full branch details">Yelahanka Newtown
+                                    Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Government Primary School Ground, 4<sup>th</sup> Stage, Yelahanka Unagara, Attur Ward No. 03 Bangalore – 64
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>MANJULA S
+
+                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Chowdeshwarinagar<br />
+                                    02
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=yelahankapt" target="_blank" title="Click to view full branch details">Yelahanka Police Training Centre
+                                    Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    Devanahalli Road, Yelahanka
+                    Kempegowda Ward No. 01 Bangalore – 64
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>NARAYANMURTHY H G
+                    <br />
+                                    LIBRARY ASSISTANT
+                    (Additional Charges)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Kempegowda<br />
+                                    01
+                                </td>
+                                <td>8.00 am to 11.30am and 4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=jaladarshini" target="_blank" title="Click to view full branch details">Jaladarshini Layout
+                                    Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building,Near BWSSB Office, Jaladarshini Layout Aramanenagar Ward No. 35 Bangalore – 54
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>CHIKKARANGAPPA
+                    <br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+                    Dr C N Ashwathnarayan
+                                </td>
+                                <td>Aramanenagar<br />
+                                    35
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=mattikere" target="_blank" title="Click to view full branch details">Mattikere Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building,2<sup>nd</sup> Floor, Nethaji Circle, Mattikere Ward No. 36, Bangalore – 54
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>CHIKKARANGAPPA<br />
+                                    LIBRARY ASSISTANT<br />
+                                    (Additional Charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West<br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+                    Dr C N Ashwathnarayan
+                                </td>
+                                <td>Mattikere<br />
+                                    36
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=gayathri" target="_blank" title="Click to view full branch details">Gayathrinagar Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building, 7<sup>th</sup> Cross, Rajajinagar 2<sup>nd</sup> Stage, Gayathrinagar Ward No. 76 Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>BHAGYALAKSHMAMMA M L
+                    <br />
+                                    LIBRARY ATTENDER
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Gayatrinagar<br />
+
+                                    76
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=peenya" target="_blank" title="Click to view full branch details">Peenya 1<sup>st</sup> Stage Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near BBMP Ward Office,
+
+                    HMT Ward No. 38
+
+                    Bangalore – 58
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>NARAYANMURTHY H G
+
+                    <br />
+                                    LIBRARY ASSISTANT
+
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore Rural
+                    <br />
+                                    Sri D K Suresh
+                                </td>
+                                <td>Rajarajeshwarinagar
+
+                    <br />
+                                    Sri Muniratnanaidu
+                                </td>
+                                <td>H M T<br />
+
+                                    38
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=satya" target="_blank" title="Click to view full branch details">Satya Narayana Layout Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    Near Udayaravi Park, Satyanarayana Layout, Shankaramutt Ward No. 75. Bangalore – 79
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>PADMAJA T<br />
+                                    LIBRARY ASSISTANT
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Shankarmat<br />
+
+                                    75
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=peenyaind" target="_blank" title="Click to view full branch details">Peenya Industrial Area Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building, MEI Layout, Laggere, Peenya Industrial Area Ward No. 41,
+                    Bangalore – 58
+                                </td>
+                                <td>PRADEEP B M
+                    <br />
+                                    LIBRARY ATTENDER
+                    (Additional Charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Dasarahalli
+
+                    <br />
+                                    Sri R Manjunath
+                                </td>
+                                <td>Peenya Industrial area<br />
+
+                                    41
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=yelahanka" target="_blank" title="Click to view full branch details">Yelahanka Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    BBMP Building, Yelahanka Newtown, Ward No. 04 Bangalore – 64
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td><b>T JAGADEESHA</b>
+                                    <br />
+                                    LIBRARY ASSISTANT
+                    (Additional Charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+
+                    <br />
+                                    <b>Sri B N Bachegowda</b>
+                                </td>
+                                <td>Yalahanka
+
+                    <br />
+                                    <b>Sri S R Vishwanath</b>
+                                </td>
+                                <td>Yalahanka<br />
+
+                                    04
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=armedpolice" target="_blank" title="Click to view full branch details">District Armed Reserve Police Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+                    Aghanashini, Block No 01, Officers Police Quarters, Byadarahalli, Bangalore – 91
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>RAMEGOWDA H N
+                    <br />
+                                    LIBRARY ATTENDER
+                    (Additional Charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Yashavanthapura
+
+                    <br />
+                                    Sri S T Somashekar
+                                </td>
+                                <td>Doddabidarakallu
+
+                    40
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=nagasandra" target="_blank" title="Click to view full branch details">Nagasandra Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near OM Shakthi Ganesha Temple, HMT Layout, Chokkasandra Ward No. 39
+
+                    Bangalore – 73
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>NARAYANMURTHY H G
+
+                    <br />
+                                    LIBRARY ASSISTANT
+
+                    (Additional Charges)
+
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Dasaralli
+
+                    <br />
+                                    Sri R Manjunath
+                                </td>
+                                <td>Chokkasandra
+
+                    39
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br />
+                                    <a href="branches?lang=en&bname=krishnanda" target="_blank" title="Click to view full branch details">Krishnandanagar Branch Library</a>
+                                </td>
+                                <td>City Central Library, Police Quarters Ground, Krishnandanagar, Marappanapalya Ward No. 44 Bangalore – 96
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>CHANDRAMMA C R
+                    <br />
+                                    ASSISTANT
+                    <br />
+                                    LIBRARIAN
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+                                <br />
+                                    Sri K Gopaliah
+                                </td>
+                                <td>Marappanapalya<br />
+                                    44
+                                </td>
+                                <td>8.00 am to 11.30am and 4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=sarpantine" target="_blank" title="Click to view full branch details">Sarpantine Road Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Sarpantine road, Kumara Park west, Rajmahal nagar Ward No. 64, Bangalore – 20
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>RAMASWAMY H
+                    <br />
+                                    LIBRARY ATTENDER<br />
+                                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West<br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram<br />
+                                    Dr C N Ashwathnarayan
+                                </td>
+                                <td>Rajamahal<br />
+                                    64
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=lakshmi" target="_blank" title="Click to view full branch details">Lakshminarayanapura Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near Lakshminarayanapura market, L.N. Pura, Dayanandanagar Ward No. 97 Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>V.C. VENKATESH
+
+                    <br />
+                                    LIBRARY ASSISTANT
+
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Malleshwaram
+
+                    Dr C N Ashwathnarayan
+
+                                </td>
+                                <td>Gayatrinagar
+
+                    76
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=aralikatte" target="_blank" title="Click to view full branch details">Aralikatte Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Dayanandanagar,
+
+                    Ward no. 97
+
+                    Bangalore – 21
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>PRADEEP B.M.
+
+                    <br />
+                                    LIBRARY ATTENDER
+
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore Central
+
+                    <br />
+                                    Sri P C Mohan
+                                </td>
+                                <td>Rajajinagar
+
+                    <br />
+                                    Sri S Suresh Kumar
+
+                                </td>
+                                <td>Dayanandnagar
+
+                    97
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=varadha" target="_blank" title="Click to view full branch details">Varadhajnagar Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, 3<sup>rd</sup> Cross, Vardharajnagar, Kuvempunagar Ward No. 11
+
+                    Bangalore – 97
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>T JAGADEESHA
+
+                    <br />
+                                    LIBRARY ASSISTANT
+
+                    (Additional Charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Byatarayanpura
+
+                    <br />
+                                    Sri Krishnabairegowda
+                                </td>
+                                <td>Kuvempunagar
+
+                    11
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=rgi" target="_blank" title="Click to view full branch details">R.G.I. Colony Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    RGI Colony, Rajajinagar, Dayanandanagar Ward No. 97, Bangalore – 10
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>PRADEEP B.M.
+
+                    <br />
+                                    LIBRARY ATTENDER
+
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore Central
+
+                    <br />
+                                    Sri P C Mohan
+                                </td>
+                                <td>Rajajinagar
+
+                    <br />
+                                    Sri S Suresh Kumar
+
+                                </td>
+                                <td>Dayanandnagar
+
+                    97
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=nagapura" target="_blank" title="Click to view full branch details">Nagpura Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Swamy Vivekanada Park, Modi Hospital Road,
+
+                    Nagpura Ward No. 67
+
+                    Bangalore – 79
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>LAKSHMIKANTH L
+
+                    <br />
+                                    LIBRARY ASSISTANT
+
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Nagapura<br />
+
+                                    67
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=ashokpuram" target="_blank" title="Click to view full branch details">Ashokpuram Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, Near Samudaya Bhavana &amp; Bala subramanya Temple, Ashokpuram, Marappanapalya Ward No. 44, Bangalore – 22
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>LAKSHMIKANTH L
+
+                    <br />
+                                    LIBRARY ASSISTANT
+
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Marappanapalya<br />
+
+                                    44
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=maruthi" target="_blank" title="Click to view full branch details">Jai Maruthinagar Vachanalaya</a>
+                                </td>
+                                <td>City Central Library,
+
+                    1<sup>st</sup> Main road, Near Hopcoms, Jai Maruthinagar, Nandhini Layout Ward No. 43,Bangalore – 96
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>CHANDRAMMA C R
+
+                    <br />
+                                    ASSISTANT
+                    <br />
+                                    LIBRARIAN
+
+                    (Additional charge)
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Mahalakshmi Badavane
+
+                    <br />
+                                    Sri K Gopaliah
+
+                                </td>
+                                <td>Nandinibadavane<br />
+
+                                    43
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td><a href="branches?lang=en&bname=doddabidar" target="_blank" title="Click to view full branch details">Doddabidarkallu Branch Library
+                                </a>
+                                </td>
+                                <td>City Central Library,
+
+                    Dr. B.R. Ambedkar Samudaya Bhavana, 5<sup>th</sup> Cross, Doddabidarakallu Ward No. 40, Tigalarapalya,
+
+                    Bangalore West-58
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>H D NANJAPPA
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Yashavanthapura
+
+                    <br />
+                                    Sri S T Somashekar
+                                </td>
+                                <td>Doddabidarakallu<br />
+
+                                    40
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="branches?lang=en&bname=abbigere" target="_blank" title="Click to view full branch details">Abbigere
+                                    Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near Jindal Govt. Higher School, Chikkabanavara Post, Abbigere
+
+                    Shettihalli Ward No. 12
+
+                    Bangalore – 90
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>SMITHA C G
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Dasaralli
+
+                    <br />
+                                    Sri R Manjunath
+                                </td>
+                                <td>Shettihalli<br />
+
+                                    12
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=agrahara" target="_blank" title="Click to view full branch details">Agrahara Layout Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Govt. School Ground, Jakkur Post, Agrahara Layout, Jakkur Ward No. 5 Yelahanka, Bangalore – 64
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>MEENAKSHI N
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Jakkur<br />
+
+                                    05
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=doddabomma" target="_blank" title="Click to view full branch details">Doddabommasandra Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near Govt. Primary School,
+
+                    Vidyaranyapura Post
+
+                    Doddabommasandra
+
+                    Ward No. 10, Bangalore – 97
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>NAGARATNA BAI N
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Byatarayanpura
+
+                    <br />
+                                    Sri Krishnabairegowda
+                                </td>
+                                <td>Doddabommasandra<br />
+                                    10
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=kattigenahalli" target="_blank" title="Click to view full branch details">Kattigenahalli Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near Doddamana Temple, Kattigenahalli, Bangalore West Taluk, Jakkur, Doddabommasandra Ward No. 5, Bangalore – 64
+
+                    <p><b>080 23567065</b></p>
+
+                                </td>
+                                <td>JYOHTI K
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Jakkur<br />
+                                    05
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=attur" target="_blank" title="Click to view full branch details">Attur Layout
+
+                    Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    Near OM Shakthi Temple, Aralikatte, Attur Layout, Bangalore – 106
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>VEENA K
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Atturu
+                                    <br />
+                                    03
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=allalasandra" target="_blank" title="Click to view full branch details">Allalasandra Branch Library</a>
+                                </td>
+                                <td>City Central Library,
+
+                    GKVK Post, Allalasandra, Bangalore Post,
+
+                    Bangalore – 106
+
+                                </td>
+                                <td>RAJA H M
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Chikkaballapura Constituency
+
+                    <br />
+                                    Sri B N Bachegowda
+                                </td>
+                                <td>Yalahanka
+
+                    <br />
+                                    Sri S R Vishwanath
+                                </td>
+                                <td>Yalahanka
+
+                    04
+                                </td>
+                                <td>8.00 am to 11.30am and 
+
+                    4.00 pm to 8.00 pm
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="branches?lang=en&bname=makkala" target="_blank" title="Click to view full branch details">Samudaya Makkala Kendra Childrens Library
+                                    </a>
+                                </td>
+                                <td>City Central Library,
+
+                    BBMP Building, MEI Layout, Laggere, Peenya Industrial Area Ward No. 41,
+
+                    Bangalore – 58
+
+                    <p><b>080 23567065</b></p>
+                                </td>
+                                <td>PUSHPALATHA V. S.
+
+                    <br />
+                                    LIBRARY INCHARGE
+                                </td>
+                                <td><a data-toggle="modal" data-id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.01398707552!2d77.56561242179642!3d13.003353751255407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc5d60d1c4f18c7f3!2sNagara%20Kendra%20Granthalaya!5e0!3m2!1sen!2sin!4v1571042819937!5m2!1sen!2sin" title="View Location on Map" class="btn btn-primary btn-sm" href="" data-target="#mapView" onclick="OpenMap('vl');" id="vl">Open Location</a>
+                                </td>
+                                <td>Bangalore West
+                    <br />
+                                    Sri D V Sadanandgowda
+                                </td>
+                                <td>Dasaralli
+
+                    <br />
+                                    Sri R Manjunath
+                                </td>
+                                <td>Peenya Industrial area
+
+                    41
+                                </td>
+                                <td>8.00 am to 11.30am and 
+                    4.00 pm to 8.00 pm
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--map view -->
+        
+        <!--            <div class="row" id="graphView">
+<div class="col-md-12">
+</div>
+</div>-->
+    </div>
+</section>
+
+<!-- Page Footer -->
+
+
+<div id="stop" class="scrollTop">
+    <span><a href="#top"><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a></span>
+</div>
+</div>
+</div>
+<!-- map modal popup -->
+<div id="graphModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-body">
+<div id="map"></div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div id="mapModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+
+<!-- <div class="modal-content">
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">City Central Library, West Zone, Malleshwaram, Bangalore</h4>
+</div>
+<div class="modal-body">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.557992029655!2d77.56909911435396!3d13.00009851777083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162f86588d67%3A0x1630a7c96d578a6d!2sCity%20Central%20Library%20West%20Zone%20Bangalore!5e0!3m2!1sen!2sin!4v1566990386641!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div> -->
+
+</div>
+</div>
+
+
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4RdfAbtQSWUEzQ0XTZk6FFaFuSfORc_A&callback=initMap"></script>
+
+<script type="text/javascript">
+
+$(window).on("load", function () {
+$(".se-pre-con").fadeOut("slow");
+});
+
+
+/* increase/decrease font-size */
+$(function () {
+$(".font-button").bind("click", function () {
+var size = parseInt($('body').css("font-size"));
+if ($(this).hasClass("plus")) {
+    size = size + 2;
+} else {
+    size = size - 2;
+    if (size <= 10) {
+        size = 10;
+    }
+}
+$('body').css("font-size", size);
+});
+});
+
+/* open and close side bar menu */
+function openNav() {
+document.getElementById("sidebarMenu").style.width = "250px";
+//document.getElementById("main").style.marginLeft = "250px";
+//document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+document.getElementById("sidebarMenu").style.width = "0";
+//document.getElementById("main").style.marginLeft = "0";
+//document.body.style.backgroundColor = "white";
+}
+
+// search the table function
+function myFunction() {
+var input, filter, table, tr, td, i, txtValue;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+table = document.getElementById("myTable");
+tr = table.getElementsByTagName("tr");
+for (i = 0; i < tr.length; i++) {
+td = tr[i].getElementsByTagName("td")[0];
+if (td) {
+    txtValue = td.textContent || td.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+    } else {
+        tr[i].style.display = "none";
+    }
+}
+}
+}
+
+$(function () {
+$('#btnView').on('click', function () {
+alert('in');
+if (document.getElementById('tableView').style.display == 'none') {
+    document.getElementById('tableView').style.display = 'block';
+    document.getElementById('graphView').style.display = 'none';
+}
+else {
+    document.getElementById('tableView').style.display = 'none';
+    document.getElementById('graphView').style.display = 'block';
+}
+});
+});
+
+// location on map
+function OpenMap(branch) {
+var src = $('#' + branch).data('id');
+$(".modal-body #mapFrame").attr('src', src);
+}
+
+$(document).ready(function () {
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function () {
+$('#slideshow > div:first')
+  .fadeOut(1000)
+  .next()
+  .fadeIn(1000)
+  .end()
+  .appendTo('#slideshow');
+}, 5000);
+});
+
+function changeLanguage() {
+var currentLocation = window.location.toString();
+var temp = currentLocation.replace('en', 'kn');
+window.location = temp;
+}
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>City Central Library, West Zone, Vijayanagar, Bangalore</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Include Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <!-- Include DataTables CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"
+    />
+
+    <!-- Your Custom Styles -->
+    <style>
+      /* Optional: Customize table styles */
+      #libraryTable {
+        font-family: Arial, sans-serif;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      #libraryTable th,
+      #libraryTable td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      #libraryTable th {
+        background-color: #b3b4c9;
+        color: white;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <!-- DataTables Initialization Script -->
+    <script>
+      $(document).ready(function () {
+        var table = $("#libraryTable").DataTable({
+          columnDefs: [
+            {
+              searchable: false,
+              orderable: false,
+              targets: 0,
+            },
+          ],
+          order: [[1, "asc"]],
+        });
+
+        // Generate serial numbers
+        table
+          .on("order.dt search.dt", function () {
+            table
+              .column(0, {
+                search: "applied",
+                order: "applied",
+              })
+              .nodes()
+              .each(function (cell, i) {
+                cell.innerHTML = i + 1;
+              });
+          })
+          .draw();
+      });
+    </script>
+  </body>
+</html>

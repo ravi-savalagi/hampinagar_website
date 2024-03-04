@@ -1,0 +1,729 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+    body {
+        /*overflow:hidden;*/
+        font-size: 12px !important;
+        position: relative !important;
+    }
+    h2 {
+        font-size: medium;
+    }
+    .navbar-brand-centered {
+        display: block;
+        position: absolute;
+        width: 65% !important;
+        margin-top: -50px !important
+    }
+    .top-bar {
+        width: 100% !important;
+    }
+    .englishText {
+        display: none;
+    }
+    .kannadaText {
+        display: none;
+    }
+    .logo {
+        margin-top: -40px !important;
+        line-height: 12px !important;
+    }
+    .logo span,
+    .logo b {
+        font-size: xx-small !important;
+        display: none;
+    }
+    .logo-main {
+        width: 100%;
+        text-align: center !important;
+        margin: 0 auto !important;
+        margin-top: -40px !important;
+        line-height: 12px !important;
+    }
+    .logo-main span {
+        font-size: 11px !important;
+        display: block;
+        font-weight: 600 !important;
+    }
+    .logo-main b {
+        display: none;
+    }
+    .kar-logo {
+        /*text-align: center !important;*/
+        /*margin: 0 auto !important;*/
+        /*width: 50% !important;
+        margin-left: -120px !important;
+        padding-left: 10px;*/
+    }
+    .kar-logo-other {
+        width: 40% !important;
+        margin-top: -10px !important;
+        margin-left: -100px !important
+    }
+    .block-right {
+        right: 0 !important;
+    }
+    .english {
+        display: block;
+    }
+    .kannada {
+        display: none;
+    }
+    .newstape {
+        height: 49vh !important;
+        width: 150px;
+    }
+    .newstape-content {
+        position: relative;
+        padding: 15px;
+        z-index: 105;
+        opacity: 1;
+    }
+    .newstape h3,
+    .newstape p,
+    .newstape a {
+        font-size: x-small !important;
+        line-height: 15px !important;
+        text-align: left !important;
+    }
+    .carousel {
+        width: 100%;
+        z-index: 90 !important;
+        height: 400px
+    }
+    .slanted {
+        height: auto;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+    }
+    .about-us {
+        height: 1250px !important;
+        background-color: #f1f1f1;
+        margin-top: -120px;
+        z-index: 106;
+    }
+    .slanted-other {
+        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%) !important;
+    }
+    .statBubbleContainer {
+        display: list-item;
+        list-style-type: none;
+        width: 300px;
+    }
+    .navbar {
+        min-height: 30px !important;
+        margin-top: 146px !important;
+    }
+    .navbar-toggle {
+        float: right !important;
+        z-index: 10000 !important;
+        margin-right: 10px !important;
+        background-color: orange !important;
+        border: 1px solid #ccc !important;
+        display: block !important;
+    }
+    #navbar-brand-centered {
+        padding-left: 25px !important;
+        background: #222222 !important
+    }
+    .navbar-header {
+        /*display:none;*/
+    }
+    .googleMap {
+        width: 100% !important;
+        height: 300px;
+        border: 0 !important;
+    }
+    .languagepicker {
+        margin: 0 !important
+    }
+    .white-padding {
+        height: 30px;
+        background-color: #f8f8f8 !important;
+        width: 100%;
+        position: fixed !important;
+        top: 80px !important;
+        z-index: 1000;
+        display: none !important;
+    }
+    /* top bar only for default page*/
+    div.stake-holders {
+        height: 120px;
+        margin: 0 auto !important;
+        padding: 0;
+        overflow: hidden !important;
+        /*border: 1px solid #ccc;*/
+        text-align: center !important
+    }
+    .left-block img,
+    .right-block img {
+        width: 60% !important;
+        height: 60% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+    .left-block,
+    .right-block {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        overflow: visible !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .right-block img {
+        margin: 0 auto;
+        float: none;
+    }
+    .left-block p,
+    .right-block p {
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .activeText p {
+        font-size: 10px !important;
+        line-height: 14px !important;
+        text-align: center !important;
+    }
+    .nActiveText p {
+        font-size: 10px !important;
+        line-height: 10px !important;
+        text-align: center !important;
+    }
+    @keyframes imageSlide {
+        0% {
+            top: 0%
+        }
+        25% {
+            top: 0%
+        }
+        50% {
+            top: -100%
+        }
+        75% {
+            top: -100%
+        }
+        100% {
+            top: 0%
+        }
+    }
+    .sm-hide {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .navbar-brand-centered {
+        left: 0 !important;
+        display: block;
+        position: absolute;
+        width: 30% !important;
+        margin: -45px 250px !important;
+    }
+    .slanted {
+        /*height:0!important;*/
+    }
+    .kar-logo-other {
+        text-align: center !important;
+        margin: 0 auto !important;
+        width: 25% !important;
+        margin-top: -12px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+    body {
+        /*overflow:hidden;*/
+        font-size: 12px !important;
+        position: relative !important;
+    }
+    .navbar {
+        min-height: 30px !important;
+        height: 50px !important;
+        /*margin-top: 146px !important;*/
+    }
+    .navbar-brand-centered {
+        display: block;
+        position: absolute;
+        height: auto;
+        text-align: center !important;
+        left: -1% !important;
+        margin-top: -190px !important;
+    }
+    #navbar-brand-centered {
+        font-size: 12px !important;
+    }
+    .navbar-header {
+        margin-top: 140px !important;
+        height: 50px !important;
+    }
+    .logo {
+        /*margin-top: -40px !important;*/
+        line-height: 12px !important;
+        top: 120px !important;
+        margin-left: 38% !important;
+    }
+    .logo span,
+    .logo b {
+        font-size: xx-small !important;
+    }
+    .logo-main {
+        margin-top: 110px !important;
+        line-height: 15px !important;
+        margin-left: 0px !important;
+    }
+    .kar-logo {
+        text-align: center !important;
+        width: 30% !important;
+        margin-top: -150px !important;
+    }
+    .kar-logo-other {
+        text-align: center !important;
+        width: 35% !important;
+        margin: 0 auto;
+        margin-top: 25px !important;
+    }
+    .newstape {
+        height: 75vh !important;
+        width: 260px;
+    }
+    .newstape-content {
+        position: relative;
+        padding: 15px;
+        z-index: 105;
+        opacity: 1;
+    }
+    .newstape h3,
+    .newstape p,
+    .newstape a {
+        font-size: x-small !important;
+        line-height: 15px !important;
+        text-align: left !important;
+    }
+    .carousel {
+        width: 100%;
+        z-index: 90 !important;
+    }
+    .disp-bottom {
+        padding-top: 5px;
+    }
+    .about-us {
+        margin-top: -250px !important;
+        height: 1200px !important;
+    }
+    .statContainer {
+        max-width: 100% !important;
+    }
+    .white-padding {
+        height: 40px;
+        background-color: #f8f8f8 !important;
+        width: 100%;
+        position: fixed !important;
+        top: 80px !important;
+        z-index: 1000;
+    }
+    /* top bar only for default page*/
+    div.stake-holders {
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .left-block img,
+    .right-block img {
+        /*width: 90px !important;
+        height: 90px !important;*/
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    .left-block,
+    .right-block {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        overflow: visible !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .right-block img {
+        margin: 0 auto;
+        float: none;
+    }
+    .left-block p,
+    .right-block p {
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .activeText p {
+        font-size: 10px !important;
+        line-height: 12px;
+    }
+    .nActiveText p {
+        font-size: 9px !important;
+        line-height: 12px !important;
+    }
+    @keyframes imageSlide {
+        0% {
+            top: 0%
+        }
+        25% {
+            top: 0%
+        }
+        50% {
+            top: -100%
+        }
+        75% {
+            top: -100%
+        }
+        100% {
+            top: 0%
+        }
+    }
+    .sm-hide {
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+    .title-text {
+        display: none !important;
+    }
+    .navbar {
+        min-height: 30px !important;
+        margin-top: 166px !important;
+        height: 50px !important;
+    }
+    #navbar-brand-centered {
+        height: 50px !important;
+        font-size: 15px !important
+    }
+    .logo {
+        /*margin-top: -40px !important;*/
+        line-height: 12px !important;
+        top: 125px !important;
+        margin: 0 auto;
+    }
+    .logo span,
+    .logo b {
+        font-size: xx-small !important;
+    }
+    .logo-main {
+        margin-top: 110px !important;
+        line-height: 15px !important;
+        margin-left: 0px !important;
+    }
+    .kar-logo {
+        text-align: center !important;
+        width: 30% !important;
+        margin-top: -150px !important;
+    }
+    .kar-logo-other {
+        text-align: center !important;
+        width: 35% !important;
+        margin: 0 auto;
+        margin-top: 25px !important;
+    }
+    .newstape {
+        height: 400px !important;
+        width: 400px;
+    }
+    .newstape-content {
+        position: relative;
+        padding: 15px;
+        z-index: 105;
+        opacity: 1;
+    }
+    .newstape h3,
+    .newstape p,
+    .newstape a {
+        font-size: 15px !important;
+        line-height: 22px !important;
+        text-align: left !important;
+    }
+    .carousel {
+        width: 100%;
+        z-index: 90 !important;
+    }
+    .navbar-brand-centered {
+        display: block;
+        position: absolute;
+        height: auto;
+        text-align: center !important;
+    }
+    .navbar-header {
+        margin-top: 150px !important;
+        height: 50px !important;
+    }
+    .about-us {
+        margin-top: -120px !important;
+        height: 100% !important;
+    }
+    .white-padding {
+        height: 80px !important;
+        background-color: #f8f8f8 !important;
+        width: 100%;
+        position: fixed !important;
+        top: 80px !important;
+    }
+    /* top bar only for default page*/
+    div.stake-holders {
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .left-block img,
+    .right-block img {
+        width: 110px !important;
+        height: 110px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    .left-block,
+    .right-block {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        overflow: visible !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .right-block img {
+        margin: 0 auto;
+        float: none;
+    }
+    .left-block p,
+    .right-block p {
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .activeText p {
+        font-size: 13px !important;
+        line-height: 18px;
+    }
+    .nActiveText p {
+        font-size: 10px !important;
+        line-height: 18px !important;
+    }
+    @keyframes imageSlide {
+        0% {
+            top: 0%
+        }
+        25% {
+            top: 0%
+        }
+        50% {
+            top: -100%
+        }
+        75% {
+            top: -100%
+        }
+        100% {
+            top: 0%
+        }
+    }
+    .sm-hide {
+        display: block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 13px !important;
+    }
+    .title-text {
+        display: none !important;
+    }
+    .navbar-header {
+        margin-top: 160px !important;
+        height: 50px !important;
+    }
+    .navbar-brand-centered {
+        display: block;
+        position: absolute;
+        height: auto;
+        text-align: center !important;
+        margin-top: -210px !important;
+    }
+    .white-padding {
+        height: 80px !important;
+        background-color: #f8f8f8 !important;
+        width: 100%;
+        position: fixed !important;
+        top: 80px !important;
+        z-index: 1000;
+    }
+    .top-bar p {
+        font-size: 15px !important;
+    }
+    #navbar-brand-centered {
+        height: 50px !important;
+        font-size: 15px !important
+    }
+    .logo {
+        margin-top: -180px !important;
+        line-height: 20px !important;
+        margin-left: 510px !important;
+    }
+    .logo span,
+    .logo b {
+        font-size: 14px !important;
+    }
+    .logo-main {
+        margin-top: 85px !important;
+        line-height: 20px !important;
+        margin-left: 0px !important;
+    }
+    .kar-logo {
+        text-align: center !important;
+        margin: 0 auto !important;
+        width: 25% !important;
+        margin-top: -125px !important;
+    }
+    .kar-logo-other {
+        text-align: center !important;
+        width: 25% !important;
+        margin: 0 auto !important;
+    }
+    .carousel {
+        width: 100%;
+        z-index: 90 !important;
+        height: 400px !important
+    }
+    .disp-bottom {
+        padding-top: 20px;
+    }
+    .about-us {
+        margin-top: -100px !important;
+        height: 105% !important;
+    }
+    .newstape {
+        height: 400px !important;
+        width: 360px;
+    }
+    .newstape-content {
+        position: relative;
+        padding: 15px;
+        z-index: 105;
+        opacity: 1;
+        overflow: hidden;
+    }
+    /* top bar only for default page*/
+    div.stake-holders {
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .left-block img,
+    .right-block img {
+        width: 110px !important;
+        height: 110px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    .left-block,
+    .right-block {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        overflow: visible !important;
+        /*border: 1px solid #ccc;*/
+    }
+    .right-block img {
+        margin: 0 auto;
+        float: none;
+    }
+    .left-block p,
+    .right-block p {
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .activeText p {
+        font-size: 16px !important;
+        line-height: 18px;
+    }
+    .nActiveText p {
+        font-size: 16px !important;
+        line-height: 18px !important;
+    }
+    @keyframes imageSlide {
+        0% {
+            top: 0%
+        }
+        25% {
+            top: 0%
+        }
+        50% {
+            top: -100%
+        }
+        75% {
+            top: -100%
+        }
+        100% {
+            top: 0%
+        }
+    }
+    .sm-hide {
+        display: block;
+    }
+}

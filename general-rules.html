@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>City Central Library, West Zone, Vijayanagar, Bangalore</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <!-- <link rel="stylesheet" type="text/css" href="E:\ravi\css\bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"> -->
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Include DataTables CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    
+    
+    <style>
+      /* Optional: Customize table styles */
+      #libraryTable {
+          font-family: Arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      #libraryTable td, #libraryTable th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+      }
+      
+      #libraryTable tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+      
+      #libraryTable th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #b3b4c9;
+          color: white;
+      }
+  </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.main-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="preloader-wrapper">
+      <div class="preloader">
+      </div>
+    </div>
+
+    <div class="search-popup">
+      <div class="search-popup-container">
+
+        <form role="search" method="get" class="search-form" action="">
+          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
+          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
+        </form>
+
+      
+        
+      </div>
+    </div>
+    <header id="header"> 
+      <div id="header1"></div>
+      <div id="header-wrap" style="height: 0;">
+        <nav class="primary-nav padding-small">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-2 col-md-2">
+                <!-- <div class="main-logo">
+                  <a href="index.html">
+                    <img src="images/main-logo1.png" alt="logo">
+                   
+                  </a>
+                </div> -->
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <div class="navbar" style="margin-top:140px !important">
+
+                  <div id="main-nav" class="stellarnav d-flex justify-content-end right navbar-fixed">
+                    <ul class="menu-list">
+
+                      <li class="menu-item has-sub">
+                        <!-- <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a> -->
+                        <a href="index.html" class="item-anchor d-flex align-item-center" data-effect="Home">Home</i></a>
+
+                        <!-- <ul class="submenu"> -->
+                          <!-- <li><a href="index.html" class="item-anchor active">Home</a></li> -->
+                          <!-- <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> </span></a></li> -->
+                        <!-- </ul> -->
+                      </li>
+
+                      <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
+
+                      <li class="menu-item has-sub">
+                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Shop">Branches<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="branch-details.html" class="item-anchor">Branches Details</a></li>
+                          <li><a href="Gram Panchayati.html" class="item-anchor">Gram Panchayati Library</a></li>
+                          <li><a href="reading-room.html" class="item-anchor"> Reading Rooms</a></li>
+                          <!-- <li><a href="shop-slider.html" class="item-anchor">Shop slider<span class="text-primary"> </span></a></li>
+                          <li><a href="shop-grid.html" class="item-anchor">Shop grid<span class="text-primary"> </span></a></li>
+                          <li><a href="shop-list.html" class="item-anchor">Shop list<span class="text-primary"> </span></a></li>
+                          <li><a href="single-product.html" class="item-anchor">Single product<span class="text-primary"> </span></a></li>
+                          <li><a href="cart.html" class="item-anchor">Cart<span class="text-primary"> </span></a></li>
+                          <li><a href="wishlist.html" class="item-anchor">Wishlist<span class="text-primary"> </span></a></li> -->
+                          <!-- <li><a href="checkout.html" class="item-anchor">Checkout<span class="text-primary"> </span></a></li> -->
+                        </ul>
+                      </li>
+
+                      <li class="menu-item has-sub">
+                         <a href="#" class="item-anchor active d-flex align-item-center" data-effect="Pages">Library<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="general-rules.html" class="item-anchor">General Rules<span class="text-primary"> </span></a></li>
+                           <li><a href="login.html" class="item-anchor">Become a Member<span class="text-primary"> </span></a></li>
+                          <li><a href="faqs.html" class="item-anchor">Borrowing & Fines<span class="text-primary"> </span></a></li>
+                          <!-- <li><a href="styles.html" class="item-anchor">Styles</a></li> -->
+                          <!-- <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li> -->
+                          <!-- <li><a href="error.html" class="item-anchor">Error page<span class="text-primary"> </span></a></li> -->
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="menu-item has-sub">
+                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Blog">Events<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="blog.html" class="item-anchor">Recent Activities</a></li>
+                          <li><a href="blog-sidebar.html" class="item-anchor">Library Day<span class="text-primary"> </span></a></li>
+                          <li><a href="blog-masonry.html" class="item-anchor">National Library Week<span class="text-primary"> </span></a></li>
+                          <li><a href="single-post.html" class="item-anchor">World book day</a></li>
+                        </ul>
+                      </li>
+
+
+                      <li class="menu-item has-sub">
+                        <a href="https://www.karnatakadigitalpubliclibrary.org" class="item-anchor d-flex align-item-center" data-effect="Blog" target="_blank">Digital Library</a>
+                        <!-- <ul class="submenu">
+                          <li><a href="blog.html" class="item-anchor">Recent Activities</a></li>
+                          <li><a href="blog-sidebar.html" class="item-anchor">Library Day<span class="text-primary"> </span></a></li>
+                          <li><a href="blog-masonry.html" class="item-anchor">National Library Week<span class="text-primary"> </span></a></li>
+                          <li><a href="single-post.html" class="item-anchor">World book day</a></li>
+                        </ul> -->
+                      </li>
+
+                      <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
+                      <li><a href="program.html" class="item-anchor" data-effect="Contact">Program</a></li>
+
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+     
+
+
+    <section class="site-banner jarallax min-height600 padding-large" style="background: url(images/hero-image.jpg) no-repeat; background-position: top;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <h1 class="page-title">About page</h1> -->
+            <div class="breadcrumbs">
+              <span class="item">
+                <!-- <a href="index.html"><h1>Home</h1></a> -->
+              </span>
+              <!-- <span class="item">Shop</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="page-title" style="
+    
+    margin-left: 37%;
+    color: crimson;
+  "><b>Rules &amp; Regulations</b></h1>
+<!-- <div>&nbsp; &nbsp;</div> -->
+    <!-- <div class="main-content d-flex flex-wrap padding-large"> -->
+      <section class="post-comment padding-large ">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-4">
+            <!-- <div class="post-meta"> -->
+              <!-- <span class="post-date">Feb 22, 2023</span> / <a href="blog.html" class="blog-categories">Fashion</a> -->
+            <!-- </div> -->
+            <!-- <h1 class="page-title">Rules & Regulations</h1> -->
+            <div class="feature-image">
+              <img src="images/rules.jpeg" alt="post image" class="jarallax-img">
+              <div>&nbsp;</div>
+              <img src="images/rules1.jpeg" alt="post image" class="jarallax-img">
+
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="post-content">
+              <p><strong><h2>General Rules:</h2></strong></p>
+              
+                <!-- <strong>Are you amazed ?</strong> -->
+              </p>
+              <ul style="list-style-type:disc;" class="inner-list">
+                <li><b>Library users should maintain silence inside the library. Respect the needs of the other users..</b></li>
+                <li><b>Eating, drinking, and smoking are absolutely prohibited inside the library.</b></li>
+                <li><b>Readers are required to deposit their personal belongings at the property counter inside the library at their own risk. Briefcases and bags are not allowed inside the library.</li>
+             <li><b>No discussion permitted inside the library.</b></li>
+             <li><b>Registration should be done to become a library member prior to use the library resources.</b></li>
+             <li><b>Library or Library Staff are not responsible for Loss of Personal belongings/ Valuables.</b></li>
+             <li><b>Using mobile phones inside the library is strictly prohibited; keep mobiles on silent mode.</b></li>
+             <li><b>Group Discussions are not allowed amongst the readers in the Reference section </b></li>
+             <li><b>Do not shelve books yourself after use. Leave them on the tables which will be shelved by the library staff</b></li>
+             <li><b>Do not take out the library materials without following proper borrowing procedures</b></li>
+             <li><b>Name and Signature has to be done in Gate register in the entrance of the library</b></li>
+             <li><b>Items taken out of the library are subject to inspection by the Library staff. This is a routine procedure and your co-operation is solicited</b></li>
+             <li><b>The librarian may recall any book from any member at any time</b></li>
+             <li><b>Refreshment of any kind shall not be taken anywhere in the library premises</b></li>
+             <li><b>Please treat library materials, equipment, and furniture with care.</b></li>
+              </ul>
+              <!-- <div class="post-tags">
+                <div class="block-tag">
+                  <ul class="list-unstyled d-flex">
+                    <li>
+                      <a href="#" class="btn btn-dark btn-small btn-rounded">Fashion</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-dark btn-small btn-rounded">Hoodie</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-dark btn-small btn-rounded">Casual</a>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+              <!-- <div class="social-links d-flex margin-small">
+                <div class="element-title">Share:</div>
+                <ul class="d-flex list-unstyled">
+                  <li>
+                    <a href="#"><i class="icon icon-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-youtube-play"></i></a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+            <!-- <div id="single-post-navigation">
+              <hr>
+              <div class="row post-navigation d-flex flex-wrap align-items-center justify-content-between">
+                <a itemprop="url" class="col-md-6 post-prev d-flex" href="#" title="Previous Post">
+                  <span>Previous</span>
+                  <h3 class="page-nav-title">Latest trends of wearing street wears supremely</h3>
+                </a>
+                <a itemprop="url" class="col-md-6 post-next d-flex" href="#" title="Next Post">
+                  <span>Next</span>
+                  <h3 class="page-nav-title">Types of comfortable clothes ideas for women</h3>
+                </a>
+              </div>
+              <hr>
+            </div> -->
+            <h3>Circulation System:</h3>
+            <ul style="list-style-type:disc;" class="inner-list">
+              <li><b>Library borrower cards are not transferable. The borrower is responsible for the books borrowed on his/her card</b></li>
+              <li><b>Do not write damage or make any mark of any kind on the library materials either by ink or pencil</b></li>
+              <li><b>Duration of borrowing books is for 15 days</li>
+           <li><b>Three books shall be borrowed at a time</b></li>
+            </ul>
+
+            <h3>OVERDUE CHARGES:</h3>
+            <ul style="list-style-type:disc;" class="inner-list">
+              <li><b>Books borrowed should be returned on or before the due date stamped, if returned late overdue fine (Re.1 per book, per day) will be charged for the delayed period.</b></li>
+            </ul>
+            <h3>BOOK LOST:</h3>
+            <ul style="list-style-type:disc;" class="inner-list">
+              <li><b>In the case of Book loss, the Replacement of the same book should be done or should pay double the cost of the book.</b></li>
+            </ul>
+            <h3>VALIDITY OF CARD</h3>
+            <ul style="list-style-type:disc;" class="inner-list">
+              <li><b>The library borrower card is valid for a lifetime. No renewal charges, In case of damage of card for long usage, Card can be changed from the Librarian.</b></li>
+            </ul>
+
+            <h3>Reference Section:</h3>
+            <ul style="list-style-type:disc;" class="inner-list">
+              <li><b>The Reference section of the Library’s reference books, which are those materials that are meant to aid refer by providing quick and accessible information on any particular topic. These materials are usually used to find facts or provide broad overviews of topics.</b></li>
+              <li><b>The Collection in this section includes Encyclopaedia, dictionaries, Reference books etc. which are only available for reference. User can make use of these resources.</b></li>
+            </ul>
+            <h3>Newspaper / Dailies Section :</h3>
+            <ul style="list-style-type:disc;" class="inner-list">
+              <li><b>In these section journals, general magazines and newsletters are available. The latest issues are displayed on display rack and other previous issues are also arranged in the rack</b></li>
+              <li><b>The Collection in this section includes Encyclopaedia, dictionaries, Reference books etc. which are only available for reference. User can make use of these resources.</b></li>
+            </ul>
+           <td>&nbsp;</td>
+        
+            <div class="row">
+              <div class="col-md-12"style="border: groove;">
+                  <h3><b style=" 
+                    margin-left: 30%;
+                ">Library working hours</b></h3>
+                  <div class="well">
+                      <p style="color: red"><strong>Morning 8.30 am to 8.00 pm (Malleshwaram, Nandini Layout, Sriramamandira and Prakashnagar Branch)</strong></p>
+                      <p style="color: darkblue"><b>Morning 8.30 am to 11.30 pm  and Evening 4.00 pm to 8.00 pm </b></p>
+                      <p style="color: darkgreen"><b>Malleshwaram Branch Library will be working on Monday 10.30am to 5.30pm (Only News Paper Section)</b> </p>
+                  </div>
+              </div>
+            </div>
+
+          </div></div></div>
+          </div>
+        </div>
+       
+        </section>
+     
+    <script>
+      $.noConflict();
+       // Initialize DataTable with serial numbers
+       $(document).ready(function() {
+           var table = $('#libraryTable').DataTable({
+               "columnDefs": [{
+                   "searchable": false,
+                   "orderable": false,
+                   "targets": 0
+               }],
+               "order": [[1, 'asc']]
+           });
+
+           // Generate serial numbers
+           table.on('order.dt search.dt', function() {
+               table.column(0, {search:'applied', order:'applied'}).nodes().each(function(cell, i) {
+                   cell.innerHTML = i + 1;
+               });
+           }).draw();
+       });
+   </script>
+
+   
+ 
+       
+           
+           
+   <footer class="footer-bs">                  
+         <div class="row">
+           <!--<div class="col-md-4 footer-brand animated fadeInLeft">-->
+           <!--<img src="images/gok_logo.png" class="img-responsive" style="width: 30%" />-->
+           <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.557992029655!2d77.56909911435396!3d13.00009851777083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162f86588d67%3A0x1630a7c96d578a6d!2sCity%20Central%20Library%20West%20Zone%20Bangalore!5e0!3m2!1sen!2sin!4v1566990386641!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+               <p style="text-align:left">© 2020 City Central Public Library - West Zone, Malleshwaram. All rights reserved.</p>
+           </div>-->
+           <div class="col-md-9 footer-nav animated fadeInUp" style="border: 0!important">
+               <div class="col-md-12">
+                   <div class="row">
+                       <div class="col-md-3">
+
+                           <h4 class="orange" style=" color: chocolate;">e-Magzine</h4>
+
+                           <ul class="list-unstyled">
+                               <li><a target="_blank" href="https://www.magzter.com">www.magzter.com </a></li>
+                               <li><a target="_blank" href="http://tehelka.com/emagazine">www.tehelka.com</a></li>
+                               <li><a target="_blank" href="http://www.ezinemart.com">www.ezinemart.com</a></li>
+                               <li><a target="_blank" href="http://www.makeuseof.com ">www.makeuseof.com</a></li>
+                               <li><a target="_blank" href="https://www.amarchitrakatha.com/in/">www.amarchirakatha.com</a></li>
+                               <li><a target="_blank" href="http://www.readwhere.com ">www.readwhere.com</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-3">
+                         <h4 class="orange" style=" color: chocolate;">Jobs</h4>
+
+                           <ul class="list-unstyled">
+                               <li><a target="_blank" href="http://www.freejobalert.com ">www.freejobalert.com </a></li>
+                               <li><a target="_blank" href="https://www.freshersvoice.com">www.freshersvoice.com</a></li>
+                               <li><a target="_blank" href="http://www.fiber2fashion.com">www.fiber2fashion.com</a></li>
+                               <li><a target="_blank" href="http://www.monsterindia.com">www.monsterindia.com</a></li>
+                               <li><a target="_blank" href="https://www.naukri.com">www.naukri.com</a></li>
+                               <li><a target="_blank" href="http://www.indeed.co.in ">www.indeed.co.in</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-3">
+                         <h4 class="orange" style=" color: chocolate;">E-News Paper</h4>
+
+                           <ul class="list-unstyled">
+                               <li><a target="_blank" href="http://www.indiapress.org">India Press Organization</a></li>
+                               <li><a target="_blank" href="http://www.w3newspapers.com/india">Indian News Papers</a></li>
+                               <li><a target="_blank" href="https://www.w3newspapers.com/india/kannada">Kannada News Papers</a></li>
+                               <li><a target="_blank" href="https://www.kannadaprabha.com">ಕನ್ನಡ ಪ್ರಭಾ</a></li>
+                               <li><a target="_blank" href="https://vijaykarnataka.com">ವಿಜಯ ಕರ್ನಾಟಕ</a></li>
+                               <li><a target="_blank" href="https://epaper.prajavani.net">ಪ್ರಜಾವಾಣಿ</a></li>
+                               <li><a target="_blank" href="https://www.vijayavani.net">ಉದಯವಾಣಿ</a></li>
+                               <li><a target="_blank" href="http://epapervijayavani.in">ವಿಜಯವಾಣಿ</a></li>
+                               <li><a target="_blank" href="http://epaper.patrika.com">Hindi News Papers</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-3">
+                         <h4 class="orange" style=" color: chocolate;">e-Books</h4>
+
+                           <ul class="list-unstyled">
+                               <li><a target="_blank" href="https://www.bookboon.com">www.bookboon.com</a></li>
+                               <li><a target="_blank" href="http://www.globaldigitallibrary.com">www.globaldigitallibrary.com</a></li>
+                               <li><a target="_blank" href="http://www.guternberg.org">www.guternberg.org</a></li>
+                               <li><a target="_blank" href="http://www.kobo.com">www.kobo.com</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-3">
+                         <h4 class="orange" style=" color: chocolate;">e-Audio</h4>
+
+                           <ul class="list-unstyled">
+                               <li><a target="_blank" href="http://www.audiobooksync.com">www.audiobooksync.com</a></li>
+                               <li><a target="_blank" href="http://www.freeclassicaudiobooks.com">www.freeclassicaudiobooks.com</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-3 footer-ns animated fadeInRight">
+               <div>
+                 <h4 class="orange" style=" color: chocolate;">Location</h4>
+
+                   <address>
+                       <p style="font-size: medium">ನಗರ ಕೇಂದ್ರ ಸಾರ್ವಜನಿಕ ಗ್ರಂಥಾಲಯ</p>
+                       <p>
+                         ಪಶ್ಚಿಮ ವಲಯ, ವಿಜಯನಗರ,
+                           <br>
+                           ಬೆಂಗಳೂರು – 560040
+                       </p>
+                       <p style="font-size: medium">&nbsp;<i class="fa fa-phone-square"></i> 080 2356 7065</p>
+                       <p>
+                           
+                         <!-- <button type="button"><iframe><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.198290064896!2d77.53236242381003!3d12.959159915153483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e743f8ae3e7%3A0x76ed7d05fa014fe8!2sHampinagar%20Government%20Public%20Library!5e0!3m2!1sen!2sin!4v1707243668878!5m2!1sen!2sin">See Map</a></iframe></button> -->
+                       </p>
+                   </address>
+               </div>
+               
+           </div>
+       </div>
+       
+       <div id="footer-bottom">
+         <hr style="border: 0; border-bottom: 1px solid #808080">
+         <p>© 2024. Department of Public Libraries. All rights reserved.</p>
+       </div>
+             
+   </footer>
+   
+
+   <script src="js/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+   <!-- Include DataTables Search plugin -->
+   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.searchWithFontAwesomeIcon.js"></script>
+  
+   <script src="js/plugins.js"></script>
+   <script src="js/script.js"></script>
+
+   
+   <script> 
+     $(function(){
+       $("#header1").load("headernormal.html"); 
+     });
+   </script>
+ </body>
+</html>
