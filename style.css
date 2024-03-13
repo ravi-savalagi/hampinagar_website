@@ -1522,6 +1522,7 @@ blockquote cite {
 .menu-list a.item-anchor:hover{
   color: var(--primary-color);
 }
+
 .menu-item.has-sub .submenu a.item-anchor{
   padding-right: 15px;
 }
@@ -2727,9 +2728,9 @@ section.categories .category-content a{
 }
 
 
-/** 7.12 Login Page
+/** 7.12 member Page
 --------------------------------------------------------------*/
-.login-tabs .tab-pane{
+.member-tabs .tab-pane{
     max-width: 600px;
     margin: auto;
 }

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>City Central Library, West Zone, Vijayanagar, Bangalore</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <!-- <link rel="stylesheet" type="text/css" href="E:\ravi\css\bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"> -->
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Include DataTables CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    
+    
+    <style>
+      /* Optional: Customize table styles */
+      #libraryTable {
+          font-family: Arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      #libraryTable td, #libraryTable th {
+          border: 1px solid #dddddd;
+          padding: 8px;
+      }
+      
+      #libraryTable tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+      
+      #libraryTable th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #b3b4c9;
+          color: white;
+      }
+
+ 
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            background: #f1f1f1;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+                color: white;
+            }
+
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            /* Add a background color to the active dot/circle */
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        .author {
+            color: cornflowerblue;
+        }
+    </style>
+
+
+ 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.main-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="preloader-wrapper">
+      <div class="preloader">
+      </div>
+    </div>
+
+    <div class="search-popup">
+      <div class="search-popup-container">
+
+        <form role="search" method="get" class="search-form" action="">
+          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
+          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
+        </form>
+
+      
+        
+      </div>
+    </div>
+    <header id="header"> 
+      <div id="header1"></div>
+      <div id="header-wrap" style="height: 0;">
+        <nav class="primary-nav padding-small">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-2 col-md-2">
+                <!-- <div class="main-logo">
+                  <a href="index.html">
+                    <img src="images/main-logo1.png" alt="logo">
+                   
+                  </a>
+                </div> -->
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <div class="navbar" style="margin-top:140px !important">
+
+                  <div id="main-nav" class="stellarnav d-flex justify-content-end right navbar-fixed">
+                    <ul class="menu-list">
+
+                      <li class="menu-item has-sub">
+                        <!-- <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a> -->
+                        <a href="index.html" class="item-anchor d-flex align-item-center" data-effect="Home">Home</i></a>
+
+                        <!-- <ul class="submenu"> -->
+                          <!-- <li><a href="index.html" class="item-anchor active">Home</a></li> -->
+                          <!-- <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> </span></a></li> -->
+                        <!-- </ul> -->
+                      </li>
+
+                      <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
+
+                      <li class="menu-item has-sub">
+                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Shop">Branches<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="branch-details.html" class="item-anchor">Branches Details</a></li>
+                          <li><a href="Gram Panchayati.html" class="item-anchor">Gram Panchayati Library</a></li>
+                          <li><a href="reading-room.html" class="item-anchor"> Reading Rooms</a></li>
+                        
+                        </ul>
+                      </li>
+
+                      <li class="menu-item has-sub">
+                         <a href="#" class="item-anchor active d-flex align-item-center" data-effect="Pages">Library<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="general-rules.html" class="item-anchor">General Rules<span class="text-primary"> </span></a></li>
+                           <li><a href="member.html" class="item-anchor">Become a Member<span class="text-primary"> </span></a></li>
+                          <li><a href="b_fines.html" class="item-anchor">Borrowing & Fines<span class="text-primary"> </span></a></li>
+                       
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="menu-item has-sub">
+                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Blog">Events<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="blog.html" class="item-anchor">Recent Activities</a></li>
+                          <li><a href="librarians-day.html" class="item-anchor">Library Day<span class="text-primary"> </span></a></li>
+                          <li><a href="national-library-week.html" class="item-anchor">National Library Week<span class="text-primary"> </span></a></li>
+                          <li><a href="world-book-day.html" class="item-anchor">World book day</a></li>
+                          <li><a href="author-of-month.html" class="item-anchor">Author of the Month</a></li>
+
+                        </ul>
+                      </li>
+
+
+                      <li class="menu-item has-sub">
+                        <a href="https://www.karnatakadigitalpubliclibrary.org" class="item-anchor d-flex align-item-center" data-effect="Blog" target="_blank">Digital Library</a>
+                        <!-- <ul class="submenu">
+                          <li><a href="blog.html" class="item-anchor">Recent Activities</a></li>
+                          <li><a href="librarians-day.html" class="item-anchor">Library Day<span class="text-primary"> </span></a></li>
+                          <li><a href="national-library-week.html" class="item-anchor">National Library Week<span class="text-primary"> </span></a></li>
+                          <li><a href="world-book-day.html" class="item-anchor">World book day</a></li>
+                        </ul> -->
+                      </li>
+
+                      <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
+                      <li><a href="program.html" class="item-anchor" data-effect="Contact">Program</a></li>
+
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+     
+
+
+    <section class="site-banner jarallax min-height600 padding-large" style="background: url(images/hero-image.jpg) no-repeat; background-position: top;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <h1 class="page-title">About page</h1> -->
+            <div class="breadcrumbs">
+              <span class="item">
+                <!-- <a href="index.html"><h1>Home</h1></a> -->
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="container-fluid page-title">
+        <span class="title"><i class="fas fa-globe"></i>&nbsp;<b>World Book Day</b></span>
+        <div class="clearfix"></div>
+        <div class="row">
+        </div>
+    </div>
+
+    <section id="page-content">
+        <div class="container-fluid">
+            <!-- table view -->
+            <div class="row">
+                <div class="col-md-8" style="margin-top: 10px; text-align: justify;">
+                    <!-- <img src="images/world-book-day.jpg" class="img-responsive" style="float: right" hspace="10" vspace="10" />-->
+                    <h5>
+                        April 23rd is the day for all the book lovers and bookworms, as the world celebrates 'World Book Day or World Book and Copyright Day'. World Book Day is celebrated by UNESCO every year on April 23rd. The date was selected by UNESCO to pay tribute to great literary figures like William Shakespeare, Miguel Cervantes, and Vladimir Nabokov and may more.
+                    </h5>
+                    <h5>
+                        The date, April 23, was finalized in the year 1995 in the UNESCO General Conference, held in Paris, to honour authors and book worldwide. Year 2019 marks the 24th edition of the World Book Day' and this year it will celebrate literature and reading while focusing particularly on the importance of enhancing and protecting indigenous languages.
+                    </h5>
+                    <h3><b>History of World Book Day</b></h3>
+                    <h5>In 1995, UNESCO decided to celebrate April 23rd as the 'World Book Day' or World Book and Copyright Day', since the date has prominence in the history of literature. April 23 marks the death anniversary of many prominent literary figures like William Shakespeare and Inca Garcilaso de la Vega, while the date also marks the birth anniversary of many other prominent authors including Maurice Druon, Vladimir Nabokov, Josep Pla, Haldor K. Lazness and Manuel Mejia Vallejo. Therefore, it became obvious for the UNESCO to choose April 23 to celebrate World Book Day' worldwide.</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/world-book-day.jpg" alt="World Book Day" class="img-responsive img-rounded" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width slides/quotes -->
+                        <div class="mySlides">
+                            <p><i class="fa fa-quote-left"></i>&nbsp;Good friends, good books, and a sleepy conscience: This is the ideal life.- &nbsp;<i class="fa fa-quote-right"></i></p>
+                            <p class="author">- Mark Twain</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <p><i class="fa fa-quote-left"></i>&nbsp;Never trust anyone who has not brought a book with them.&nbsp;<i class="fa fa-quote-right"></i></p>
+                            <p class="author">- Lemony Snicket</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <p><i class="fa fa-quote-left"></i>&nbsp;It is what you read when you don't have to that determines what you will be when you can't help it.&nbsp;<i class="fa fa-quote-right"></i></p>
+                            <p class="author">- Oscar Wilde</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <p><i class="fa fa-quote-left"></i>&nbsp;The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.&nbsp;<i class="fa fa-quote-right"></i></p>
+                            <p class="author">- Jane Austen</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <p><i class="fa fa-quote-left"></i>&nbsp;A room without books is like a body without a soul.&nbsp;<i class="fa fa-quote-right"></i></p>
+                            <p class="author">- Marcus Tullius Cicero</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <p><i class="fa fa-quote-left"></i>&nbsp;I have always imagined that Paradise will be a kind of library.&nbsp;<i class="fa fa-quote-right"></i></p>
+                            <p class="author">- Jorge Luis Borges</p>
+                        </div>
+
+                        <!-- Next/prev buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <!-- Dots/bullets/indicators -->
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <script>
+        $.noConflict();
+         // Initialize DataTable with serial numbers
+         $(document).ready(function() {
+             var table = $('#libraryTable').DataTable({
+                 "columnDefs": [{
+                     "searchable": false,
+                     "orderable": false,
+                     "targets": 0
+                 }],
+                 "order": [[1, 'asc']]
+             });
+  
+             // Generate serial numbers
+             table.on('order.dt search.dt', function() {
+                 table.column(0, {search:'applied', order:'applied'}).nodes().each(function(cell, i) {
+                     cell.innerHTML = i + 1;
+                 });
+             }).draw();
+         });
+     </script>
+  
+            
+     <footer class="footer-bs">                  
+           <div class="row">
+             <!--<div class="col-md-4 footer-brand animated fadeInLeft">-->
+             <!--<img src="images/gok_logo.png" class="img-responsive" style="width: 30%" />-->
+             <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.557992029655!2d77.56909911435396!3d13.00009851777083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162f86588d67%3A0x1630a7c96d578a6d!2sCity%20Central%20Library%20West%20Zone%20Bangalore!5e0!3m2!1sen!2sin!4v1566990386641!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+                 <p style="text-align:left">© 2020 City Central Public Library - West Zone, Malleshwaram. All rights reserved.</p>
+             </div>-->
+             <div class="col-md-9 footer-nav animated fadeInUp" style="border: 0!important">
+                 <div class="col-md-12">
+                     <div class="row">
+                         <div class="col-md-3">
+  
+                             <h5 class="orange" style=" color: chocolate;">e-Magzine</h5>
+  
+                             <ul class="list-unstyled">
+                                 <li><a target="_blank" href="https://www.magzter.com">www.magzter.com </a></li>
+                                 <li><a target="_blank" href="http://tehelka.com/emagazine">www.tehelka.com</a></li>
+                                 <li><a target="_blank" href="http://www.ezinemart.com">www.ezinemart.com</a></li>
+                                 <li><a target="_blank" href="http://www.makeuseof.com ">www.makeuseof.com</a></li>
+                                 <li><a target="_blank" href="https://www.amarchitrakatha.com/in/">www.amarchirakatha.com</a></li>
+                                 <li><a target="_blank" href="http://www.readwhere.com ">www.readwhere.com</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3">
+                           <h5 class="orange" style=" color: chocolate;">Jobs</h5>
+  
+                             <ul class="list-unstyled">
+                                 <li><a target="_blank" href="http://www.freejobalert.com ">www.freejobalert.com </a></li>
+                                 <li><a target="_blank" href="https://www.freshersvoice.com">www.freshersvoice.com</a></li>
+                                 <li><a target="_blank" href="http://www.fiber2fashion.com">www.fiber2fashion.com</a></li>
+                                 <li><a target="_blank" href="http://www.monsterindia.com">www.monsterindia.com</a></li>
+                                 <li><a target="_blank" href="https://www.naukri.com">www.naukri.com</a></li>
+                                 <li><a target="_blank" href="http://www.indeed.co.in ">www.indeed.co.in</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3">
+                           <h5 class="orange" style=" color: chocolate;">E-News Paper</h5>
+  
+                             <ul class="list-unstyled">
+                                 <li><a target="_blank" href="http://www.indiapress.org">India Press Organization</a></li>
+                                 <li><a target="_blank" href="http://www.w3newspapers.com/india">Indian News Papers</a></li>
+                                 <li><a target="_blank" href="https://www.w3newspapers.com/india/kannada">Kannada News Papers</a></li>
+                                 <li><a target="_blank" href="https://www.kannadaprabha.com">ಕನ್ನಡ ಪ್ರಭಾ</a></li>
+                                 <li><a target="_blank" href="https://vijaykarnataka.com">ವಿಜಯ ಕರ್ನಾಟಕ</a></li>
+                                 <li><a target="_blank" href="https://epaper.prajavani.net">ಪ್ರಜಾವಾಣಿ</a></li>
+                                 <li><a target="_blank" href="https://www.vijayavani.net">ಉದಯವಾಣಿ</a></li>
+                                 <li><a target="_blank" href="http://epapervijayavani.in">ವಿಜಯವಾಣಿ</a></li>
+                                 <li><a target="_blank" href="http://epaper.patrika.com">Hindi News Papers</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3">
+                           <h5 class="orange" style=" color: chocolate;">e-Books</h5>
+  
+                             <ul class="list-unstyled">
+                                 <li><a target="_blank" href="https://www.bookboon.com">www.bookboon.com</a></li>
+                                 <li><a target="_blank" href="http://www.globaldigitallibrary.com">www.globaldigitallibrary.com</a></li>
+                                 <li><a target="_blank" href="http://www.guternberg.org">www.guternberg.org</a></li>
+                                 <li><a target="_blank" href="http://www.kobo.com">www.kobo.com</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-md-3">
+                           <h5 class="orange" style=" color: chocolate;">e-Audio</h5>
+  
+                             <ul class="list-unstyled">
+                                 <li><a target="_blank" href="http://www.audiobooksync.com">www.audiobooksync.com</a></li>
+                                 <li><a target="_blank" href="http://www.freeclassicaudiobooks.com">www.freeclassicaudiobooks.com</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-3 footer-ns animated fadeInRight">
+                 <div>
+                   <h5 class="orange" style=" color: chocolate;">Location</h5>
+  
+                     <address>
+                         <p style="font-size: medium">ನಗರ ಕೇಂದ್ರ ಸಾರ್ವಜನಿಕ ಗ್ರಂಥಾಲಯ</p>
+                         <p>
+                           ಪಶ್ಚಿಮ ವಲಯ, ವಿಜಯನಗರ,
+                             <br>
+                             ಬೆಂಗಳೂರು – 560040
+                         </p>
+                         <p style="font-size: medium">&nbsp;<i class="fa fa-phone-square"></i> 080 2356 7065</p>
+                         <p>
+                             
+                           <!-- <button type="button"><iframe><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.198290064896!2d77.53236242381003!3d12.959159915153483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e743f8ae3e7%3A0x76ed7d05fa014fe8!2sHampinagar%20Government%20Public%20Library!5e0!3m2!1sen!2sin!4v1707243668878!5m2!1sen!2sin">See Map</a></iframe></button> -->
+                         </p>
+                     </address>
+                 </div>
+                 
+             </div>
+         </div>
+         
+         <div id="footer-bottom">
+           <hr style="border: 0; border-bottom: 1px solid #808080">
+           <p>© 2024. Department of Public Libraries. All rights reserved.</p>
+         </div>
+               
+     </footer>
+     
+  
+     <script src="js/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+     <!-- Include DataTables Search plugin -->
+     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/dataTables.searchWithFontAwesomeIcon.js"></script>
+    
+     <script src="js/plugins.js"></script>
+     <script src="js/script.js"></script>
+  
+ 
+     <script>
+         $(window).on("load", function () {
+             $(".se-pre-con").fadeOut("slow");
+         });
+ 
+         // slide script   
+         var slideIndex = 1;
+         showSlides(slideIndex);
+ 
+         function plusSlides(n) {
+             showSlides(slideIndex += n);
+         }
+ 
+         function currentSlide(n) {
+             showSlides(slideIndex = n);
+         }
+ 
+         function showSlides(n) {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             var dots = document.getElementsByClassName("dot");
+             if (n > slides.length) { slideIndex = 1 }
+             if (n < 1) { slideIndex = slides.length }
+             for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+             }
+             for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex - 1].style.display = "block";
+             dots[slideIndex - 1].className += " active";
+         }
+ 
+     </script>
+
+
+
+
+
+     
+     <script> 
+       $(function(){
+         $("#header1").load("headernormal.html"); 
+       });
+     </script>
+   </body>
+  </html>
