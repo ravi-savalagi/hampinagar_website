@@ -54,7 +54,7 @@
         font-weight: 600 !important;
     }
     .logo-main b {
-        display: none;
+        display: block;
     }
     .kar-logo {
         /*text-align: center !important;*/
